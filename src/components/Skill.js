@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import odin from '../images/odin.png';
 import {
 	faGithub,
 	faCss3Alt,
@@ -29,7 +29,12 @@ const Skills = () => {
 			</TileHolder>
 			<OdinStyle>
 				<h3>
-					I started the <a href="https://www.theodinproject.com/home">Odin Project</a> during{' '}
+					I started the{' '}
+					<a href="https://www.theodinproject.com/home">
+						<img src={odin} alt="odin project" />
+						Odin Project
+					</a>{' '}
+					during{' '}
 				</h3>
 				<h3>the lockdown and have continued studying </h3>
 				<h3>7hrs per day every day for 5 months.</h3>
@@ -65,9 +70,19 @@ const OdinStyle = styled.div`
 	text-align: right;
 	padding: 5%;
 	margin-bottom: 15%;
+	img {
+		height: 30px;
+		width: auto;
+	}
 	@media (max-width: 780px) {
 		width: 90%;
 		text-align: center;
+	}
+	a:link {
+		color: rgb(54, 54, 54);
+	}
+	a:visited {
+		color: rgb(54, 54, 54);
 	}
 `;
 
