@@ -3,7 +3,7 @@ export const HobbieData = [
 		name: 'Cycling',
 
 		stuff:
-			'On top of week long trips around the Lakes, Yorkshire Dales and Scotland, I have spent 2 weeks cycling the width of France from Geneva to Bordeaux, cycled self supported from Auckland to Christchurch while in New Zealand and cycled over 600km in Corsica. ',
+			'On top of week long trips around the Lakes, Yorkshire Dales and Scotland, I have spent 2 weeks cycling the width of France from Geneva to Bordeaux, cycled self supported from Auckland to Christchurch while in New Zealand and cycled over 600km around Corsica. ',
 	},
 	{
 		name: 'Travel',

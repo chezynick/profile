@@ -22,7 +22,7 @@ const Projects = () => {
 	const displayHandler = () => {
 		setDisplay(false);
 	};
-	console.log(projectDetail);
+
 	return (
 		<ProjectHolderStyle>
 			<h1>My Projects</h1>
@@ -34,12 +34,20 @@ const Projects = () => {
 						<h3>{a.name}</h3>
 						<p>{a.brief}</p>
 						<a href={a.website}>
-							<FontAwesomeIcon size="x2" color="rgb(231,248,205) " icon={faExternalLinkAlt} />
+							<FontAwesomeIcon
+								style={{ marginRight: '10px' }}
+								color="rgb(231,248,205) "
+								icon={faExternalLinkAlt}
+							/>
 							Live Webpage
 						</a>
 
 						<a href={a.githubLink}>
-							<FontAwesomeIcon size="x2" color="rgb(231,248,205) " icon={faGithub} />
+							<FontAwesomeIcon
+								style={{ marginRight: '10px' }}
+								color="rgb(231,248,205) "
+								icon={faGithub}
+							/>
 							View Code
 						</a>
 					</InfoStyle>
@@ -59,6 +67,9 @@ const ProjectHolderStyle = styled.div`
 	color: rgb(54, 54, 54);
 	padding-top: 30px;
 	padding-bottom: 30px;
+	@media (max-width: 800px) {
+		width: 100%;
+	}
 `;
 const ProjectStyle = styled.div`
 	width: 80%;
@@ -72,10 +83,17 @@ const ProjectStyle = styled.div`
 	grid-template-columns: 1fr 1fr;
 	justify-content: space-between;
 	align-items: center;
+	@media (max-width: 800px) {
+		grid-template-columns: 1fr;
+	}
 	img {
-		height: 90%;
-		width: auto;
+		height: auto;
+		width: 80%;
 		padding-left: 20px;
+		@media (max-width: 800px) {
+			width: 100%;
+			padding-left: 0px;
+		}
 	}
 `;
 const InfoStyle = styled.div`
@@ -85,6 +103,10 @@ const InfoStyle = styled.div`
 	flex-direction: column;
 	text-align: left;
 	padding-bottom: 20px;
+	@media (max-width: 800px) {
+		text-align: center;
+		width: 100%;
+	}
 	a:link {
 		color: rgb(231, 248, 205);
 		text-decoration: none;

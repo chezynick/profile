@@ -39,25 +39,36 @@ const Skills = () => {
 };
 const SkillStyle = styled.div`
 	width: 90%;
-	height: 500px;
+	height: auto;
 	background-color: rgb(231, 248, 205);
 	color: rgb(54, 54, 54);
 	display: flex;
 	justify-content: space-between;
 	padding: 5%;
 	align-items: center;
+	@media (max-width: 780px) {
+		flex-direction: column-reverse;
+	}
 `;
 const TileHolder = styled.div`
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
+	@media (max-width: 900px) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+	}
 `;
 const OdinStyle = styled.div`
 	width: 40%;
 	text-align: right;
 	padding: 5%;
 	margin-bottom: 15%;
+	@media (max-width: 780px) {
+		width: 90%;
+		text-align: center;
+	}
 `;
 
 export default Skills;

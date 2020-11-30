@@ -23,6 +23,11 @@ const HeadStyle = styled.div`
 	height: auto;
 	padding-bottom: 2%;
 	margin-top: 2%;
+	@media (max-width: 750px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
 	img {
 		width: 30%;
@@ -31,6 +36,10 @@ const HeadStyle = styled.div`
 		opacity: 0.55;
 		border-radius: 5%;
 		margin-bottom: 5%;
+		@media (max-width: 1000px) {
+			top: 10%;
+			margin: auto;
+		}
 	}
 `;
 const StatementStyle = styled.div`
@@ -39,5 +48,20 @@ const StatementStyle = styled.div`
 	position: absolute;
 	z-index: 2;
 	text-align: left;
+	@media (max-width: 1000px) {
+		top: 10%;
+		margin-left: 5%;
+	}
+	@media (max-width: 750px) {
+		top: 0%;
+		margin-left: 20%;
+		text-align: center;
+		position: relative;
+		margin-left: 0px;
+		height: auto;
+	}
+	@media (max-width: 550px) {
+		font-size: x-small;
+	}
 `;
 export default Header;

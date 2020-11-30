@@ -21,16 +21,25 @@ const NavStyle = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
+	@media (max-width: 550px) {
+		flex-wrap: wrap;
+	}
 	h1 {
 		margin-left: 5%;
 		font-size: xx-large;
 		font-weight: bold;
+		@media (max-width: 550px) {
+			margin: auto;
+			padding-bottom: 5%;
+			padding-top: 5%;
+			text-align: center;
+		}
 	}
 `;
 const NavItems = styled.div`
 	margin-right: 5%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 	a {

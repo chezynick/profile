@@ -45,6 +45,13 @@ const DetailStyle = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	border: rgb(54, 54, 54) solid 10px;
+	@media (max-width: 1000px) {
+		flex-wrap: wrap;
+		height: auto;
+		top: 0%;
+		justify-content: center;
+		padding-top: 10px;
+	}
 	img {
 		margin-left: 5%;
 		margin-right: 5%;
@@ -56,11 +63,15 @@ const DetailStyle = styled.div`
 `;
 const InfoStyle = styled.div`
 	width: 50%;
-	height: 100%;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 2%;
+	@media (max-width: 1000px) {
+		height: auto;
+		width: 90%;
+	}
 	footer {
 		display: flex;
 		width: 100%;

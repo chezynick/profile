@@ -44,7 +44,8 @@ export const ProjectData = [
 		future:
 			'Still in progress, would like to look again at the styling of the page as well as adding animations to home page.',
 		brief: 'This here site - utilising React with styled components deployed with Netlify.',
-		githubLink: '',
+		website: 'https://chezynick.github.io/profile/#/',
+		githubLink: 'https://github.com/chezynick/profile',
 	},
 	{
 		name: 'My Recipe App',
