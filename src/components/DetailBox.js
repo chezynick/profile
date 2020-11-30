@@ -48,10 +48,12 @@ const DetailStyle = styled.div`
 	@media (max-width: 1000px) {
 		flex-wrap: wrap;
 		height: auto;
-		top: 0%;
+		top: 0;
 		justify-content: center;
 		padding-top: 10px;
+		z-index: 20;
 	}
+
 	img {
 		margin-left: 5%;
 		margin-right: 5%;

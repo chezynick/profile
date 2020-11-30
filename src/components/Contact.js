@@ -28,6 +28,10 @@ const ContactStyle = styled.div`
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
+	margin-top: 10%;
+	@media (max-width: 550px) {
+		margin-top: 20%;
+	}
 
 	a:link {
 		color: rgb(231, 248, 205);

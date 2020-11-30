@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../images/profileImg.jpeg';
+import profileImg from '../images/profilepic2.png';
 import styled from 'styled-components';
 
 const Header = () => {
@@ -7,10 +7,10 @@ const Header = () => {
 		<HeadStyle>
 			<StatementStyle>
 				<h1>2020: A Catalyst for Change.</h1>
-				<h1>After 14 years of creating</h1>
-				<h1>adventures for others,</h1>
-				<h1>its time to start the </h1>
-				<h1>next stage of my journey.</h1>
+				<h2>After 14 years of creating</h2>
+				<h2>adventures for others,</h2>
+				<h2>it's time to start the </h2>
+				<h2>next stage of my journey.</h2>
 			</StatementStyle>
 			<img src={profileImg} alt="profile pic of nick" />
 		</HeadStyle>
@@ -21,8 +21,8 @@ const HeadStyle = styled.div`
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding-bottom: 2%;
-	margin-top: 2%;
+	padding-bottom: 1%;
+	margin-top: 1%;
 	@media (max-width: 750px) {
 		display: flex;
 		flex-direction: column;
@@ -47,7 +47,7 @@ const StatementStyle = styled.div`
 	top: 30%;
 	position: absolute;
 	z-index: 2;
-	text-align: left;
+	text-align: center;
 	@media (max-width: 1000px) {
 		top: 10%;
 		margin-left: 5%;

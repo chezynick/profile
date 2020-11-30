@@ -63,6 +63,7 @@ const ProjectHolderStyle = styled.div`
 	width: 80%;
 	margin: auto;
 	height: auto;
+	margin-top: 10%;
 	background-color: rgb(231, 248, 205);
 	color: rgb(54, 54, 54);
 	padding-top: 30px;
@@ -70,13 +71,16 @@ const ProjectHolderStyle = styled.div`
 	@media (max-width: 800px) {
 		width: 100%;
 	}
+	@media (max-width: 650px) {
+		margin-top: 25%;
+	}
 `;
 const ProjectStyle = styled.div`
 	width: 80%;
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	min-height: 200px;
+	height: auto;
 	background-color: rgb(54, 54, 54);
 	color: rgb(231, 248, 205);
 	display: grid;

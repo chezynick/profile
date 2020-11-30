@@ -21,8 +21,16 @@ const NavStyle = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	@media (max-width: 550px) {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	background-color: rgb(54, 54, 54);
+	opacity: 1;
+
+	@media (max-width: 600px) {
 		flex-wrap: wrap;
+		height: auto;
+		margin-bottom: 20px;
 	}
 	h1 {
 		margin-left: 5%;
@@ -31,7 +39,7 @@ const NavStyle = styled.div`
 		@media (max-width: 550px) {
 			margin: auto;
 			padding-bottom: 5%;
-			padding-top: 5%;
+			margin-top: 5%;
 			text-align: center;
 		}
 	}
@@ -42,6 +50,7 @@ const NavItems = styled.div`
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
+
 	a {
 		min-width: 100px;
 		text-decoration: none;
