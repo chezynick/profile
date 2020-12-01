@@ -57,6 +57,7 @@ const DetailStyle = styled.div`
 	img {
 		margin-left: 5%;
 		margin-right: 5%;
+
 		height: auto;
 		width: 50%;
 		border: rgb(54, 54, 54) 10px solid;

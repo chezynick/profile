@@ -37,7 +37,7 @@ const Skills = () => {
 					during{' '}
 				</h3>
 				<h3>the lockdown and have continued studying </h3>
-				<h3>7hrs per day every day for 5 months.</h3>
+				<h3>7hrs per day everyday for 5 months.</h3>
 			</OdinStyle>
 		</SkillStyle>
 	);

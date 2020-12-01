@@ -68,6 +68,7 @@ const ProjectHolderStyle = styled.div`
 	color: rgb(54, 54, 54);
 	padding-top: 30px;
 	padding-bottom: 30px;
+
 	@media (max-width: 800px) {
 		width: 100%;
 	}
@@ -87,6 +88,7 @@ const ProjectStyle = styled.div`
 	grid-template-columns: 1fr 1fr;
 	justify-content: space-between;
 	align-items: center;
+	border-radius: 20px;
 	@media (max-width: 800px) {
 		grid-template-columns: 1fr;
 	}
@@ -94,9 +96,13 @@ const ProjectStyle = styled.div`
 		height: auto;
 		width: 80%;
 		padding-left: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+
 		@media (max-width: 800px) {
-			width: 100%;
-			padding-left: 0px;
+			width: 90%;
+			padding-left: 5%;
+			padding-top: 5%;
 		}
 	}
 `;
