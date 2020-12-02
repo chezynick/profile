@@ -38,6 +38,18 @@ const Tile = styled.div`
 		padding: 10px;
 		border: rgb(54, 54, 54) solid 8px;
 		border-radius: 10%;
+		opacity: 0;
+		scale: 1;
+		animation: drop 2s linear forwards;
+		@keyframes drop {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
 		img {
 			width: 100%;
 			height: auto;

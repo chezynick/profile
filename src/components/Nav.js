@@ -8,6 +8,7 @@ const Nav = () => {
 			<h1>Nick Chesterton</h1>
 			<NavItems>
 				<Link to="/">Home</Link>
+				<Link to="/skills">Skills</Link>
 				<Link to="/projects">Projects</Link>
 				<Link to="/about">About Me</Link>
 				<Link to="/contact">Contact</Link>
@@ -27,7 +28,7 @@ const NavStyle = styled.div`
 	background-color: rgb(54, 54, 54);
 	opacity: 1;
 
-	@media (max-width: 600px) {
+	@media (max-width: 720px) {
 		flex-wrap: wrap;
 		height: auto;
 		margin-bottom: 20px;
@@ -36,7 +37,7 @@ const NavStyle = styled.div`
 		margin-left: 5%;
 		font-size: xx-large;
 		font-weight: bold;
-		@media (max-width: 550px) {
+		@media (max-width: 720px) {
 			margin: auto;
 			padding-bottom: 5%;
 			margin-top: 5%;

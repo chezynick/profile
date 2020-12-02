@@ -23,45 +23,76 @@ const HeadStyle = styled.div`
 	height: auto;
 	padding-bottom: 1%;
 	margin-top: 1%;
-	@media (max-width: 750px) {
+
+	@media (max-width: 720px) {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		padding-top: 15%;
 	}
 
 	img {
 		width: 30%;
 		height: auto;
-		margin-left: 25%;
-		opacity: 0.55;
+		margin-left: 100%;
+		opacity: 0.85;
 		border-radius: 5%;
 		margin-bottom: 5%;
+		animation: slideImg 2s ease-out 0.2s 1 forwards;
+		@keyframes slideImg {
+			0% {
+				margin-left: 100%;
+				opacity: 0;
+			}
+			100% {
+				margin-left: 25%;
+				opacity: 0.85;
+			}
+		}
 		@media (max-width: 1000px) {
 			top: 10%;
 			margin: auto;
+		}
+		@media (max-width: 720px) {
+			width: 50%;
+			margin-left: 0%;
 		}
 	}
 `;
 const StatementStyle = styled.div`
 	margin-left: 20%;
-	top: 30%;
+	top: 120%;
 	position: absolute;
 	z-index: 2;
 	text-align: center;
+	animation: slideStatement 2s ease-out 0.2s 1 forwards;
+	@keyframes slideStatement {
+		0% {
+			top: 120%;
+			opacity: 0;
+		}
+		100% {
+			top: 30%;
+			opacity: 1;
+		}
+	}
 	@media (max-width: 1000px) {
 		top: 10%;
-		margin-left: 5%;
+		margin-left: 10%;
+		padding-bottom: 20%;
 	}
 	@media (max-width: 750px) {
 		top: 0%;
-		margin-left: 20%;
+
 		text-align: center;
 		position: relative;
-		margin-left: 0px;
+		padding-top: 10%;
 		height: auto;
+		animation: none;
 	}
 	@media (max-width: 550px) {
 		font-size: x-small;
+		animation: none;
 	}
 `;
 export default Header;

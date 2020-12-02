@@ -27,32 +27,34 @@ const Projects = () => {
 		<ProjectHolderStyle>
 			<h1>My Projects</h1>
 			<h3>Click each box for more details.</h3>
-			{myProjects.map((a) => (
-				<ProjectStyle key={a.name} onClick={() => clickHandler(a.name)}>
-					<img src={a.proImg} alt="" />
-					<InfoStyle>
-						<h3>{a.name}</h3>
-						<p>{a.brief}</p>
-						<a href={a.website}>
-							<FontAwesomeIcon
-								style={{ marginRight: '10px' }}
-								color="rgb(231,248,205) "
-								icon={faExternalLinkAlt}
-							/>
-							Live Webpage
-						</a>
+			<ProjectContainer>
+				{myProjects.map((a) => (
+					<ProjectStyle key={a.name} onClick={() => clickHandler(a.name)}>
+						<img src={a.proImg} alt="" />
+						<InfoStyle>
+							<h3>{a.name}</h3>
+							<p>{a.brief}</p>
+							<a href={a.website}>
+								<FontAwesomeIcon
+									style={{ marginRight: '10px' }}
+									color="rgb(231,248,205) "
+									icon={faExternalLinkAlt}
+								/>
+								Live Webpage
+							</a>
 
-						<a href={a.githubLink}>
-							<FontAwesomeIcon
-								style={{ marginRight: '10px' }}
-								color="rgb(231,248,205) "
-								icon={faGithub}
-							/>
-							View Code
-						</a>
-					</InfoStyle>
-				</ProjectStyle>
-			))}
+							<a href={a.githubLink}>
+								<FontAwesomeIcon
+									style={{ marginRight: '10px' }}
+									color="rgb(231,248,205) "
+									icon={faGithub}
+								/>
+								View Code
+							</a>
+						</InfoStyle>
+					</ProjectStyle>
+				))}
+			</ProjectContainer>
 			{display === true ? <DetailBox projectDetail={projectDetail} displayHandler={displayHandler} /> : ''}
 		</ProjectHolderStyle>
 	);
@@ -60,13 +62,13 @@ const Projects = () => {
 export default Projects;
 
 const ProjectHolderStyle = styled.div`
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	height: auto;
-	margin-top: 10%;
+	margin-top: 5%;
 	background-color: rgb(231, 248, 205);
 	color: rgb(54, 54, 54);
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-bottom: 30px;
 
 	@media (max-width: 800px) {
@@ -76,43 +78,55 @@ const ProjectHolderStyle = styled.div`
 		margin-top: 25%;
 	}
 `;
+const ProjectContainer = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;
+`;
 const ProjectStyle = styled.div`
-	width: 80%;
+	width: 40%;
 	margin: auto;
-	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	margin-bottom: 30px;
+	margin-top: 30px;
 	height: auto;
 	background-color: rgb(54, 54, 54);
 	color: rgb(231, 248, 205);
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	justify-content: space-between;
+	grid-template-columns: 1fr;
+	justify-content: center;
 	align-items: center;
 	border-radius: 20px;
+	opacity: 0;
+	animation: slide 1s linear 1s forwards;
 	@media (max-width: 800px) {
-		grid-template-columns: 1fr;
+		width: 80%;
 	}
 	img {
 		height: auto;
 		width: 80%;
-		padding-left: 20px;
-		padding-top: 5px;
-		padding-bottom: 5px;
 
+		padding-top: 20px;
+		padding-bottom: 10px;
+		margin: auto;
 		@media (max-width: 800px) {
 			width: 90%;
-			padding-left: 5%;
+
 			padding-top: 5%;
 		}
 	}
 `;
 const InfoStyle = styled.div`
-	width: 70%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 	height: auto;
 	display: flex;
 	flex-direction: column;
-	text-align: left;
-	padding-bottom: 20px;
+	text-align: center;
+	padding-bottom: 30px;
 	@media (max-width: 800px) {
 		text-align: center;
 		width: 100%;

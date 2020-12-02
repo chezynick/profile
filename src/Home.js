@@ -7,7 +7,6 @@ const Home = () => {
 	return (
 		<Homestyle>
 			<Header />
-			<Skill />
 		</Homestyle>
 	);
 };

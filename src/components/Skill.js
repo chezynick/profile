@@ -10,6 +10,7 @@ import {
 	faSass,
 	faNpm,
 	faFigma,
+	faFortAwesome,
 } from '@fortawesome/free-brands-svg-icons';
 import TileIcon from './TileIcon';
 
@@ -25,6 +26,13 @@ const Skills = () => {
 				<TileIcon IconName={faSass} backgrnd="white" maincolor="#cc6699" name="SASS" pcolor="black" />
 				<TileIcon IconName={faNpm} backgrnd="white" maincolor="#d9311b" name="NPM" pcolor="black" />
 				<TileIcon IconName={faFigma} backgrnd="white" maincolor="black" name="FIGMA" pcolor="black" />
+				<TileIcon
+					IconName={faFortAwesome}
+					backgrnd="white"
+					maincolor="#228ae6"
+					name="FONT AWESOME"
+					pcolor="black"
+				/>
 				<TileIcon IconName="" backgrnd="black" name="STYLED COMPONENTS" />
 			</TileHolder>
 			<OdinStyle>
@@ -34,9 +42,9 @@ const Skills = () => {
 						<img src={odin} alt="odin project" />
 						Odin Project
 					</a>{' '}
-					during{' '}
+					during
 				</h3>
-				<h3>the lockdown and have continued studying </h3>
+				<h3>August 2020 and have continued studying </h3>
 				<h3>7hrs per day everyday for 5 months.</h3>
 			</OdinStyle>
 		</SkillStyle>
@@ -45,14 +53,18 @@ const Skills = () => {
 const SkillStyle = styled.div`
 	width: 90%;
 	height: auto;
+	margin-top: 5%;
 	background-color: rgb(231, 248, 205);
 	color: rgb(54, 54, 54);
 	display: flex;
 	justify-content: space-between;
 	padding: 5%;
 	align-items: center;
-	@media (max-width: 780px) {
+	@media (max-width: 1000px) {
 		flex-direction: column-reverse;
+	}
+	@media (max-width: 720px) {
+		margin-top: 20%;
 	}
 `;
 const TileHolder = styled.div`
@@ -70,13 +82,25 @@ const OdinStyle = styled.div`
 	text-align: right;
 	padding: 5%;
 	margin-bottom: 15%;
+
+	opacity: 0;
+	animation: slide 1s linear 1s forwards;
+	@keyframes slide {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 	img {
 		height: 30px;
 		width: auto;
 	}
-	@media (max-width: 780px) {
+	@media (max-width: 1000px) {
 		width: 90%;
 		text-align: center;
+		margin-bottom: 5%;
 	}
 	a:link {
 		color: rgb(54, 54, 54);

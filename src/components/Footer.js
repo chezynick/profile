@@ -26,6 +26,8 @@ const FooterStyle = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+	bottom: 0;
 
 	a:link {
 		color: rgb(231, 248, 205);

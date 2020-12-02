@@ -26,7 +26,7 @@ const About = () => {
 			<h3>
 				I have worked in Sales and Retail since I was 15 years old, for the last 14 years I have been working in
 				Travel for STA’s Round the World telesales team based in Manchester. I have been looking for a new
-				direction for the past few years and this years challenges have provided that opportunity for change.
+				direction for the past few years and the challenges of 2020 have provided that opportunity for change.
 				With the onset of covid I was furloughed in July, in August I began my journey on the Odin Project.
 			</h3>
 			<p>
@@ -62,18 +62,34 @@ const About = () => {
 };
 export default About;
 const AboutStyle = styled.div`
-	width: 90%;
+	width: 80%;
 	height: 100%;
-	padding: 10% 5% 10% 5%;
+	padding: 10%;
 	background-color: rgb(231, 248, 205);
 	color: rgb(54, 54, 54);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	text-align: center;
+	opacity: 0;
+	margin-top: 50%;
+	animation: arise 1.2s ease-out 0.2s forwards;
+	@keyframes arise {
+		0% {
+			margin-top: 50%;
+			opacity: 0;
+		}
+		100% {
+			margin-top: 0%;
+			opacity: 1;
+		}
+	}
 
+	@media (max-width: 720px) {
+		padding-top: 30%;
+	}
 	@media (max-width: 550px) {
-		margin-top: 30%;
+		padding-top: 40%;
 	}
 	p {
 		align-items: center;
