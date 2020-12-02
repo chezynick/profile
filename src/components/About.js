@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { HobbieData } from './HobbieData.js';
 import HobbieBox from './HobbieBox';
 import WorkSkills from './WorkSkills';
+import ScrollTop from './ScrollTop';
 
 const About = () => {
 	const Hobbies = HobbieData;
@@ -57,6 +58,7 @@ const About = () => {
 			<WorkSkills />
 
 			<HobbieBox Hobbies={Hobbies} />
+			<ScrollTop />
 		</AboutStyle>
 	);
 };

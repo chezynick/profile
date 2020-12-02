@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-
+import ScrollTop from './ScrollTop';
 import styled from 'styled-components';
 //import components
 import DetailBox from './DetailBox';
@@ -56,6 +56,7 @@ const Projects = () => {
 				))}
 			</ProjectContainer>
 			{display === true ? <DetailBox projectDetail={projectDetail} displayHandler={displayHandler} /> : ''}
+			<ScrollTop />
 		</ProjectHolderStyle>
 	);
 };
@@ -100,7 +101,7 @@ const ProjectStyle = styled.div`
 	align-items: center;
 	border-radius: 20px;
 	opacity: 0;
-	animation: slide 1s linear 1s forwards;
+	animation: slide 1s linear 0.3s forwards;
 	@media (max-width: 800px) {
 		width: 80%;
 	}
