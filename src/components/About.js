@@ -87,11 +87,14 @@ const AboutStyle = styled.div`
 		}
 	}
 
-	@media (max-width: 720px) {
-		padding-top: 30%;
+	@media (max-width: 780px) {
+		margin-top: 30%;
+		animation: none;
+		opacity: 1;
 	}
 	@media (max-width: 550px) {
-		padding-top: 40%;
+		margin-top: 50%;
+		opacity: 1;
 	}
 	p {
 		align-items: center;

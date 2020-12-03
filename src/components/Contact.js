@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
+import ScrollTop from './ScrollTop';
 
 const Contact = () => {
 	return (
@@ -14,18 +15,19 @@ const Contact = () => {
 			<Styled2>
 				<div>
 					<h3>nick_chesterton@yahoo.com</h3>
-					<FontAwesomeIcon size="2x" icon={faEnvelope} />
+					<FontAwesomeIcon size="5x" icon={faEnvelope} />
 				</div>
 			</Styled2>
 			<Styled3>
 				<a href="https://github.com/chezynick/">
 					<h3>My Github Account</h3>
-					<FontAwesomeIcon size="2x" icon={faGithub} />
+					<FontAwesomeIcon size="5x" icon={faGithub} />
 				</a>
 			</Styled3>
 			<Styled4>
 				<h3>Please see my CV for further contact details.</h3>
 			</Styled4>
+			<ScrollTop />
 		</ContactStyle>
 	);
 };
@@ -39,8 +41,14 @@ const ContactStyle = styled.div`
 	flex-direction: column;
 	margin-top: 5%;
 
-	@media (max-width: 550px) {
+	@media (max-width: 780px) {
 		margin-top: 20%;
+	}
+	@media (max-width: 700px) {
+		margin-top: 30%;
+	}
+	@media (max-width: 550px) {
+		margin-top: 50%;
 	}
 	@keyframes slideleft {
 		0% {
@@ -64,6 +72,7 @@ const Styled1 = styled.div`
 	height: 25%;
 	display: flex;
 	align-items: center;
+
 	h1 {
 		width: 50%;
 		height: 100%;
@@ -74,6 +83,16 @@ const Styled1 = styled.div`
 		align-items: center;
 		justify-content: center;
 		animation: slideleft 2s 0.2s forwards;
+		@media (max-width: 800px) {
+			width: 80%;
+			margin-left: 10%;
+			animation: none;
+		}
+		@media (max-width: 500px) {
+			width: 100%;
+			margin-left: 0%;
+			animation: none;
+		}
 	}
 `;
 const Styled2 = styled.div`
@@ -92,6 +111,16 @@ const Styled2 = styled.div`
 		align-items: center;
 		justify-content: space-evenly;
 		animation: slideright 2s 0.7s forwards;
+		@media (max-width: 800px) {
+			width: 80%;
+			margin-left: 10%;
+			animation: none;
+		}
+		@media (max-width: 500px) {
+			width: 100%;
+			margin-left: 0%;
+			animation: none;
+		}
 	}
 `;
 const Styled3 = styled.div`
@@ -110,6 +139,16 @@ const Styled3 = styled.div`
 		align-items: center;
 		justify-content: space-evenly;
 		animation: slideleft 2s 1.2s forwards;
+		@media (max-width: 800px) {
+			width: 80%;
+			margin-left: 10%;
+			animation: none;
+		}
+		@media (max-width: 500px) {
+			width: 100%;
+			margin-left: 0%;
+			animation: none;
+		}
 	}
 	a:visited {
 		width: 50%;
@@ -120,6 +159,16 @@ const Styled3 = styled.div`
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
+		@media (max-width: 800px) {
+			width: 80%;
+			margin-left: 10%;
+			animation: none;
+		}
+		@media (max-width: 500px) {
+			width: 100%;
+			margin-left: 0%;
+			animation: none;
+		}
 	}
 `;
 const Styled4 = styled.div`
@@ -137,5 +186,15 @@ const Styled4 = styled.div`
 		align-items: center;
 		justify-content: center;
 		animation: slideright 2s 1.7s forwards;
+		@media (max-width: 800px) {
+			width: 80%;
+			margin-left: 10%;
+			animation: none;
+		}
+		@media (max-width: 500px) {
+			width: 100%;
+			margin-left: 0%;
+			animation: none;
+		}
 	}
 `;

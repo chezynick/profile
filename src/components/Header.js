@@ -1,7 +1,7 @@
 import React from 'react';
 import profileImg from '../images/profilepic2.png';
 import styled from 'styled-components';
-
+import ScrollTop from './ScrollTop';
 const Header = () => {
 	return (
 		<HeadStyle>
@@ -13,6 +13,7 @@ const Header = () => {
 				<h2>next stage of my journey.</h2>
 			</StatementStyle>
 			<img src={profileImg} alt="profile pic of nick" />
+			<ScrollTop />
 		</HeadStyle>
 	);
 };
@@ -24,7 +25,7 @@ const HeadStyle = styled.div`
 	padding-bottom: 1%;
 	margin-top: 1%;
 
-	@media (max-width: 720px) {
+	@media (max-width: 780px) {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -53,9 +54,9 @@ const HeadStyle = styled.div`
 			top: 10%;
 			margin: auto;
 		}
-		@media (max-width: 720px) {
+		@media (max-width: 780px) {
 			width: 50%;
-			margin-left: 0%;
+			margin-left: 0px;
 		}
 	}
 `;
@@ -77,13 +78,13 @@ const StatementStyle = styled.div`
 		}
 	}
 	@media (max-width: 1000px) {
-		top: 10%;
+		top: 5%;
 		margin-left: 10%;
 		padding-bottom: 20%;
+		animation: none;
 	}
-	@media (max-width: 750px) {
+	@media (max-width: 780px) {
 		top: 0%;
-
 		text-align: center;
 		position: relative;
 		padding-top: 10%;

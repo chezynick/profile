@@ -78,6 +78,9 @@ const ProjectHolderStyle = styled.div`
 	@media (max-width: 650px) {
 		margin-top: 25%;
 	}
+	@media (max-width: 650px) {
+		margin-top: 50%;
+	}
 `;
 const ProjectContainer = styled.div`
 	display: flex;

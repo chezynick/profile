@@ -13,6 +13,7 @@ import {
 	faFortAwesome,
 } from '@fortawesome/free-brands-svg-icons';
 import TileIcon from './TileIcon';
+import ScrollTop from './ScrollTop';
 
 const Skills = () => {
 	return (
@@ -42,11 +43,11 @@ const Skills = () => {
 						<img src={odin} alt="odin project" />
 						Odin Project
 					</a>{' '}
-					during
+					during August 2020 and have continued studying 7hrs per day everyday since, using weekends to create
+					my projects.
 				</h3>
-				<h3>August 2020 and have continued studying </h3>
-				<h3>7hrs per day everyday for 5 months.</h3>
 			</OdinStyle>
+			<ScrollTop />
 		</SkillStyle>
 	);
 };
@@ -63,8 +64,14 @@ const SkillStyle = styled.div`
 	@media (max-width: 1000px) {
 		flex-direction: column-reverse;
 	}
-	@media (max-width: 720px) {
+	@media (max-width: 780px) {
 		margin-top: 20%;
+	}
+	@media (max-width: 550px) {
+		margin-top: 35%;
+	}
+	@media (max-width: 450px) {
+		margin-top: 40%;
 	}
 `;
 const TileHolder = styled.div`
@@ -80,9 +87,9 @@ const TileHolder = styled.div`
 const OdinStyle = styled.div`
 	width: 40%;
 	text-align: right;
-	padding: 5%;
+	padding: 10%;
 	margin-bottom: 15%;
-
+	line-height: 1.8;
 	opacity: 0;
 	animation: slide 1s linear 1s forwards;
 	@keyframes slide {

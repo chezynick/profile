@@ -47,4 +47,7 @@ const HobbieStyle = styled.div`
 const BoxStyle = styled.div`
 	width: 40%;
 	height: auto;
+	@media (max-width: 600px) {
+		width: 80%;
+	}
 `;

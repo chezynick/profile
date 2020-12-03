@@ -40,10 +40,9 @@ export const ProjectData = [
 		assignment:
 			' Create and design a personal profile website to display your projects as well as explaining a little about yourself.',
 		description:
-			' Probably the hardest one, not to code but to write! Created again using React, deployed using Netlify and styled using styled-components which I have found preferable to Sass as it keeps each component seperate and easily re-useable.',
-		future:
-			' Still in progress, would like to look again at the styling of the page as well as adding animations to home page.',
-		brief: ' This here site - utilising React with styled components deployed with Netlify.',
+			' Probably the hardest one, not to code but to write! Created again using React, deployed using GH-Pages and styled using styled-components which I have found preferable to Sass as it keeps each component seperate and easily re-useable.',
+		future: ' Still in progress, would like to look again at the styling of the page.',
+		brief: ' This here site - utilising React with styled components deployed with GH Pages.',
 		website: 'https://chezynick.github.io/profile/#/',
 		githubLink: 'https://github.com/chezynick/profile',
 	},
@@ -55,7 +54,7 @@ export const ProjectData = [
 		description:
 			' This was built before I learnt React so all of the components are contained in 1 JS file, looking back this looks vast and confusing.Originally built as a book storage as above, I am someone who uses alot of online recipes and found this a more useful subject, after the initial build this was re-designed using factory functions.',
 		future:
-			' This has been continually in use by myself since inception, i have plans to add a user function with shared storage maybe using firebase? Also swapping across to a React App to allow just partial re-render with each change would be good.',
+			' This has been continually in use by myself since inception, i have plans to add a user function with shared storage maybe using firebase. Also swapping across to a React App to allow just partial re-render with each change would be good.',
 		brief:
 			' Odin project assignment to practice Array methods, the App is a place to store recipes discovered online.',
 		website: 'https://chezynick.github.io/recipe/',

@@ -13,13 +13,13 @@ const WorkSkills = () => {
 			name: 'TeamWork',
 			image: teamwork,
 			article:
-				'From my previous line of work I believe many of the skills I learnt there would be easily transferable to a career as a developer. Team work and collaboration was a massive part of my success at STA, communication between our small team could be the difference between making a sale or not, leaving detailed notes in a booking could help massively when picking up a colleagues booking. But aside from our immediate team we communicated with colleagues in the operations team, suppliers (who numbered in the hundreds), airlines and our own customers.',
+				'Team work and collaboration was a massive part of my success at STA, communication between our small team could be the difference between making a sale or not, leaving detailed notes in a booking could also help massively when picking up a colleagues booking. But aside from our immediate team we were part of a much larger network of colleagues in the operations team, suppliers (who numbered in the hundreds), airlines and most importantly our customers.',
 		},
 		{
 			name: 'Problem Solving',
 			image: problem,
 			article:
-				'As part of my role we were required to use various computer systems for booking trips, we also had numerous suppliers all of whom had their own systems which we also used. Nearly all of the airlines we dealt with had their own way of working as well, this meant the syntax we used was vast and varied. Huge amounts of commands needed to be memorised and utilised, this was used to make simple bookings right through to vast 5 continent round the world trips with over 20 stops. These needed to be broken down into smaller chunks to solve any sticking points, was it something I had done before? If so check the previous booking. Could the airline help? Check their agent site or speak to them directly, had another colleague come across this problem? Google?',
+				'As part of my role we were required to use various computer systems for booking trips, internal and external supplier programs. Huge amounts of commands needed to be memorised and utilised, this was used to make simple bookings right through to vast 5 continent round the world trips with over 20 stops. These needed to be broken down into smaller chunks to solve any sticking points, was it something I had done before? If so check the previous booking. Could the airline help? Check their agent site or speak to them directly, had another colleague come across this problem? Google?',
 		},
 		{
 			name: 'Working under pressure',
@@ -67,8 +67,10 @@ const WorkStyle = styled.div`
 	height: auto;
 	margin-left: 0;
 	img {
-		width: 200px;
-		height: auto;
+		width: auto;
+		height: 200px;
+		max-height: 210px;
+		padding-bottom: 20px;
 	}
 `;
 const ContainerStyle = styled.div`
@@ -78,6 +80,7 @@ const ContainerStyle = styled.div`
 	flex-wrap: wrap;
 	text-align: center;
 	justify-content: center;
+	margin: auto;
 `;
 const BoxStyle = styled.div`
 	width: 40%;
@@ -86,7 +89,7 @@ const BoxStyle = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	@media (max-width: 550px) {
+	@media (max-width: 850px) {
 		width: 80%;
 	}
 `;
