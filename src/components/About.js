@@ -25,10 +25,10 @@ const About = () => {
 		<AboutStyle>
 			<h1>About Me</h1>
 			<h3>
-				I have worked in Sales and Retail since I was 15 years old, for the last 14 years I have been working in
-				Travel for STA’s Round the World telesales team based in Manchester. I have been looking for a new
-				direction for the past few years and the challenges of 2020 have provided that opportunity for change.
-				With the onset of covid I was furloughed in July, in August I began my journey on the Odin Project.
+				My background is Sales and Retail and for the last 14 years I worked in travel at STA within their
+				telesales team. I have been looking for a new direction and the challenges of 2020 have provided the
+				opportunity for change. Since August 2020 I have fully submerged myself into full-time study of the Odin
+				Project.
 			</h3>
 			<p>
 				The Odin project is a free open source coding curriculum and is maintained and improved by a team of
@@ -99,10 +99,7 @@ const AboutStyle = styled.div`
 	p {
 		align-items: center;
 	}
-	img {
-		width: 50px;
-		height: auto;
-	}
+
 	a:link {
 		color: rgb(54, 54, 54);
 

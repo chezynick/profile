@@ -15,13 +15,13 @@ const Contact = () => {
 			<Styled2>
 				<div>
 					<h3>nick_chesterton@yahoo.com</h3>
-					<FontAwesomeIcon size="5x" icon={faEnvelope} />
+					<FontAwesomeIcon size="4x" icon={faEnvelope} />
 				</div>
 			</Styled2>
 			<Styled3>
 				<a href="https://github.com/chezynick/">
 					<h3>My Github Account</h3>
-					<FontAwesomeIcon size="5x" icon={faGithub} />
+					<FontAwesomeIcon size="4x" icon={faGithub} />
 				</a>
 			</Styled3>
 			<Styled4>

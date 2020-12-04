@@ -22,7 +22,7 @@ const HeadStyle = styled.div`
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding-bottom: 1%;
+	padding-bottom: 0;
 	margin-top: 1%;
 
 	@media (max-width: 780px) {
