@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/profile/static/css/main.3f29f7ee.chunk.css",
-    "main.js": "/profile/static/js/main.f0fbb95c.chunk.js",
-    "main.js.map": "/profile/static/js/main.f0fbb95c.chunk.js.map",
+    "main.js": "/profile/static/js/main.d483de7b.chunk.js",
+    "main.js.map": "/profile/static/js/main.d483de7b.chunk.js.map",
     "runtime-main.js": "/profile/static/js/runtime-main.07bf3418.js",
     "runtime-main.js.map": "/profile/static/js/runtime-main.07bf3418.js.map",
     "static/js/2.57ac4b98.chunk.js": "/profile/static/js/2.57ac4b98.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/accuracy.44e5d829.png": "/profile/static/media/accuracy.44e5d829.png",
     "static/media/battleships.f780d04f.png": "/profile/static/media/battleships.f780d04f.png",
     "static/media/colina.14f3addb.png": "/profile/static/media/colina.14f3addb.png",
+    "static/media/conversation.e224dd07.png": "/profile/static/media/conversation.e224dd07.png",
     "static/media/etch.29c36318.png": "/profile/static/media/etch.29c36318.png",
     "static/media/generation.09b24aff.png": "/profile/static/media/generation.09b24aff.png",
     "static/media/pressure.3e4bd6e9.png": "/profile/static/media/pressure.3e4bd6e9.png",
@@ -31,6 +32,6 @@
     "static/js/runtime-main.07bf3418.js",
     "static/js/2.57ac4b98.chunk.js",
     "static/css/main.3f29f7ee.chunk.css",
-    "static/js/main.f0fbb95c.chunk.js"
+    "static/js/main.d483de7b.chunk.js"
   ]
 }
