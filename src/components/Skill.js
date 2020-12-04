@@ -49,8 +49,8 @@ const Skills = () => {
 						<img src={odin} alt="odin project" />
 						Odin Project
 					</a>{' '}
-					during August 2020 and have continued studying 7hrs per day everyday since, using weekends to create
-					my projects.
+					during August 2020 and have continued studying 8 hours per day everyday since, using weekends to
+					create my projects.
 				</h3>
 			</OdinStyle>
 			<ScrollTop />
