@@ -18,6 +18,7 @@ const Projects = () => {
 		const result = myProjects.filter((a) => a.name === projectName);
 		setprojectDetail([...result]);
 		setDisplay(true);
+		document.body.style.overflow = 'hidden';
 	};
 	const displayHandler = () => {
 		setDisplay(false);

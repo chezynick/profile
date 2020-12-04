@@ -6,6 +6,7 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 const DetailBox = ({ displayHandler, projectDetail }) => {
 	const clickHandler = () => {
+		document.body.style.overflow = '';
 		displayHandler();
 	};
 	return (
@@ -34,7 +35,7 @@ const DetailBox = ({ displayHandler, projectDetail }) => {
 export default DetailBox;
 
 const DetailStyle = styled.div`
-	width: 98%;
+	width: 99%;
 	height: 500px;
 	background-color: rgb(231, 248, 205);
 	color: rgb(54, 54, 54);
@@ -61,7 +62,7 @@ const DetailStyle = styled.div`
 		height: auto;
 		width: 50%;
 		border: rgb(54, 54, 54) 10px solid;
-		border-radius: 10%;
+		border-radius: 2rem;
 	}
 `;
 const InfoStyle = styled.div`
