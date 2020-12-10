@@ -35,13 +35,14 @@ const DetailBox = ({ displayHandler, projectDetail }) => {
 export default DetailBox;
 
 const DetailStyle = styled.div`
-	width: 99%;
-	height: 500px;
+	width: 98%;
+	height: auto;
 	background-color: rgb(231, 248, 205);
 	color: rgb(54, 54, 54);
 	position: fixed;
+	overflow: scroll;
 	top: 20%;
-	left: 0%;
+	left: 5px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

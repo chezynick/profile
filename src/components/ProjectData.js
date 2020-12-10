@@ -8,6 +8,7 @@ import profile from '../images/profile.png';
 import etch from '../images/etch.png';
 import weather from '../images/weather.png';
 import battleships from '../images/battleships.png';
+import strive from '../images/strive.png';
 export const ProjectData = [
 	{
 		name: 'Colina Bike App',
@@ -20,6 +21,19 @@ export const ProjectData = [
 		brief: 'Bike shop App made using React and React-Dom-Router',
 		website: 'https://chezynick.github.io/colina-app/#/',
 		githubLink: 'https://github.com/chezynick/colina-app',
+	},
+	{
+		name: 'Strive- The fitness App',
+		proImg: strive,
+		assignment:
+			' Replicate a popular social media website of my choice, with lots of fuctionality and including a backend interface.',
+		description:
+			' I based this on the Strava fitness app, utilising Firebase to store my activity and user information. Using 2 APIs for additional information and also used react- State, Effect, History and React-router-dom. This App is also mobile friendly.',
+		future:
+			' Updated to include Like/comment functionality, I need to create an add user section and a delete activity option.',
+		brief: 'Strava clone made using firebase, React and utilising API Weather and Recipe data.',
+		website: 'https://chezynick.github.io/strive/#/',
+		githubLink: 'https://github.com/chezynick/strive',
 	},
 	{
 		name: 'Generation Game',
