@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import stylecomp from '../images/stylecomp.png';
 
-const TileIcon = ({ IconName, backgrnd, maincolor, name, pcolor }) => {
+const TileIcon = ({ IconName, backgrnd, maincolor, name, pcolor, image }) => {
 	const [display, setDisplay] = useState(false);
 	const mouseHandler = () => {
 		setDisplay(true);
@@ -20,7 +20,7 @@ const TileIcon = ({ IconName, backgrnd, maincolor, name, pcolor }) => {
 				onMouseOver={mouseHandler}
 			>
 				{IconName === '' ? (
-					<img src={stylecomp} alt="styled components" />
+					<img src={image} alt="logo" />
 				) : (
 					<FontAwesomeIcon color={maincolor} size="5x" icon={IconName} />
 				)}
@@ -51,7 +51,7 @@ const Tile = styled.div`
 			}
 		}
 		img {
-			width: 100%;
+			width: 70%;
 			height: auto;
 		}
 		p {

@@ -14,19 +14,23 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import TileIcon from './TileIcon';
 import ScrollTop from './ScrollTop';
+import firebase from '../images/firebase.png';
+import stylecomp from '../images/stylecomp.png';
 
 const Skills = () => {
 	const skillsArr = [
 		{ IconName: faReact, backgrnd: 'black', maincolor: '#61dbfb', name: 'REACT' },
-		{ IconName: faGithub, backgrnd: 'black', maincolor: 'white', name: 'GIT-HUB' },
+
 		{ IconName: faCss3Alt, backgrnd: '#66d3fa', maincolor: 'white', name: 'CSS 3', pcolor: 'black' },
 		{ IconName: faHtml5, backgrnd: '#f16529', maincolor: 'white', name: 'HTML 5', pcolor: 'black' },
 		{ IconName: faJs, backgrnd: '#f0db4f', maincolor: 'black', name: 'JAVASCRIPT', pcolor: 'black' },
 		{ IconName: faSass, backgrnd: 'white', maincolor: '#cc6699', name: 'SASS', pcolor: 'black' },
+		{ IconName: faGithub, backgrnd: 'black', maincolor: 'white', name: 'GIT-HUB' },
 		{ IconName: faNpm, backgrnd: 'white', maincolor: '#d9311b', name: 'NPM', pcolor: 'black' },
+		{ IconName: '', backgrnd: 'black', name: 'FIREBASE', img: firebase },
 		{ IconName: faFigma, backgrnd: 'white', maincolor: 'black', name: 'FIGMA', pcolor: 'black' },
 		{ IconName: faFortAwesome, backgrnd: 'white', maincolor: '#228ae6', name: 'FONT AWESOME', pcolor: 'black' },
-		{ IconName: '', backgrnd: 'black', name: 'STYLED COMPONENTS' },
+		{ IconName: '', backgrnd: 'black', name: 'STYLED COMPONENTS', img: stylecomp },
 	];
 
 	return (
@@ -39,6 +43,7 @@ const Skills = () => {
 						maincolor={skill.maincolor}
 						name={skill.name}
 						pcolor={skill.pcolor}
+						image={skill.img}
 					/>
 				))}
 			</TileHolder>
