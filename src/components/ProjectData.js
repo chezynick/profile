@@ -9,6 +9,7 @@ import etch from '../images/etch.png';
 import weather from '../images/weather.png';
 import battleships from '../images/battleships.png';
 import strive from '../images/strive.png';
+import recipe2 from '../images/recipe2.png';
 export const ProjectData = [
 	{
 		name: 'Colina Bike App',
@@ -34,6 +35,18 @@ export const ProjectData = [
 		brief: 'Strava clone made using firebase, React and utilising API Weather and Recipe data.',
 		website: 'https://chezynick.github.io/strive/#/',
 		githubLink: 'https://github.com/chezynick/strive',
+	},
+	{
+		name: 'FoodieFile',
+		proImg: recipe2,
+		assignment:
+			' Wanted to create a new look version of an earlier project with added functionality, cloud storage and a search option.',
+		description:
+			' This time I used React to create the App, cleaned up the styling using styled components and hosted the recipe information on Firebase.',
+		future: ' I am thinking about adding on a user log in utilising firebases authentication service.',
+		brief: ' Re-build of an earlier project, decided to update my recipe project using newly learnt techniques.',
+		website: 'https://chezynick.github.io/recipe2/',
+		githubLink: 'https://github.com/chezynick/recipe2',
 	},
 	{
 		name: 'Generation Game',
