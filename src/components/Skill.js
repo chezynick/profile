@@ -16,6 +16,7 @@ import TileIcon from './TileIcon';
 import ScrollTop from './ScrollTop';
 import firebase from '../images/firebase.png';
 import stylecomp from '../images/stylecomp.png';
+import tailwind from '../images/tailwind.png';
 
 const Skills = () => {
 	const skillsArr = [
@@ -28,6 +29,7 @@ const Skills = () => {
 		{ IconName: faGithub, backgrnd: 'black', maincolor: 'white', name: 'GIT-HUB' },
 		{ IconName: faNpm, backgrnd: 'white', maincolor: '#d9311b', name: 'NPM', pcolor: 'black' },
 		{ IconName: '', backgrnd: 'black', name: 'FIREBASE', img: firebase },
+		{ IconName: '', backgrnd: 'white', name: 'TAILWIND', img: tailwind, pcolor: 'black' },
 		{ IconName: faFigma, backgrnd: 'white', maincolor: 'black', name: 'FIGMA', pcolor: 'black' },
 		{ IconName: faFortAwesome, backgrnd: 'white', maincolor: '#228ae6', name: 'FONT AWESOME', pcolor: 'black' },
 		{ IconName: '', backgrnd: 'black', name: 'STYLED COMPONENTS', img: stylecomp },
