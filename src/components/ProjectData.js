@@ -10,6 +10,7 @@ import weather from '../images/weather.png';
 import battleships from '../images/battleships.png';
 import strive from '../images/strive.png';
 import recipe2 from '../images/recipe2.png';
+import guesswho from '../images/guesswho.png';
 export const ProjectData = [
 	{
 		name: 'Colina Bike App',
@@ -47,6 +48,17 @@ export const ProjectData = [
 		brief: ' Re-build of an earlier project, decided to update my recipe project using newly learnt techniques.',
 		website: 'https://chezynick.github.io/recipe2/',
 		githubLink: 'https://github.com/chezynick/recipe2',
+	},
+	{
+		name: 'Guess Who',
+		proImg: guesswho,
+		assignment: ' Continued learning and practice with React this time using tailwind for the styling',
+		description:
+			' Built outside of the Odin project to continue utilising my skills while practising new ones, used React and integrated Tailwind for styling- hosted on GitHub pages.',
+
+		brief: ' App based on the popular 70s game Guess who, created with styled footballer cards from the era',
+		website: 'https://chezynick.github.io/guess-who/',
+		githubLink: 'https://github.com/chezynick/guess-who',
 	},
 	{
 		name: 'Generation Game',
